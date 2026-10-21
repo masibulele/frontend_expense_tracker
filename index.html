@@ -3,10 +3,52 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css?family=Noto+Sans+Chakma:regular" rel="stylesheet" />
     <link rel="stylesheet" href="style.css">
     <title>Expense Tracker</title>
 </head>
 <body>
+    <div class="container">
+        <h1 class="title-heading">Expense Tracker</h1>
+        <div class="balance-container">
+            <h3 class="balance-title">Your balance</h3>
+            <h1 class="balance-amount">R0.00</h1>
+            <div class="total-container">
+                <div class="income-container">
+                    <h3 class="income-title">Income</h3>
+                    <h2 class="income-amount">R0.00</h2>
+                </div>
+                <div class="expense-container">
+                    <h3 class="expense-title">Expense</h3>
+                    <h2 class="expense-amount">R0.00</h2>
+                </div>
+            </div>
+        </div>
+        <div class="main-content-container">
+            <div class="transactions-container">
+                <h2 class="transaction-title">Transaction</h2>
+                <ul class="transactions-list">
+                    <li class="list-item">placeholder transaction</li>
+                </ul>
+            </div>
+            <div class="form-container">
+                <h2 class="form-title">Add Transaction</h2>
+                <form action="" class="trans-form">
+                    <div class="form-group">
+                        <label for="description">Description</label>
+                        <input type="text" id="description" placeholder="Enter description...">
+                    </div>
+                    <div class="form-group">
+                        <label for="amount">Amount</label>
+                        <input type="text" id="amount" placeholder="amount">
+                    </div>
+                    <button class="btn" type="submit"> Add Transaction</button>
+                </form>
+            </div>
+
+        </div>
+
+    </div>
     
     <script src="script.js"></script>
 </body>
